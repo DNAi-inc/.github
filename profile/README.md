@@ -6,23 +6,6 @@ We help companies organize their operations, improve communication, and automate
 Our products are designed to be practical.
 We focus on usability, speed, stability, and real value for users.
 
-## What We Offer
-
-- Web platforms for business management
-- Communication tools for teams and clients
-- Digital automation modules
-- Secure user and data management
-- Integration with common business tools
-
-## Our Approach
-
-- Simple interfaces
-- Fast onboarding
-- Transparent pricing
-- Stable infrastructure
-- Active updates
-- Only useful features
-
 ## Projects on GitHub
 
 This Github hosts code, utilities, and open components used in our products.
@@ -44,23 +27,6 @@ DNAi crée des plateformes SaaS et des outils numériques pour les entreprises.
 Nous aidons les organisations à structurer leurs opérations, améliorer leurs communications et automatiser les tâches répétitives.
 
 Nos solutions sont pratiques, rapides à adopter et orientées sur l’efficacité.
-
-## Ce que nous offrons
-
-- Plateformes web de gestion
-- Outils de communication interne et externe
-- Modules d’automatisation
-- Gestion sécurisée des utilisateurs et des données
-- Intégrations avec les outils d’entreprise courants
-
-## Notre approche
-
-- Interfaces simples
-- Mise en place rapide
-- Tarification transparente
-- Infrastructure stable
-- Mises à jour continues
-- Fonctionnalités utiles seulement
 
 ## Projets sur GitHub
 
