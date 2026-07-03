@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="description" content="Color Rush - Un jeu de réflexes addictif">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Color Rush 🎮</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <!-- Écran d'accueil -->
+        <div id="homeScreen" class="screen active">
+            <div class="logo">🎮</div>
+            <h1>Color Rush</h1>
+            <p class="subtitle">Testez vos réflexes !</p>
+            
+            <div class="stats-card">
+                <div class="stat">
+                    <span class="stat-label">Meilleur score</span>
+                    <span class="stat-value" id="bestScore">0</span>
+                </div>
+            </div>
+            
+            <button class="btn btn-primary" id="startBtn">
+                <span>Commencer</span>
+                <span class="btn-icon">▶</span>
+            </button>
+            
+            <div class="instructions">
+                <h3>Comment jouer ?</h3>
+                <p>Appuyez sur la couleur affichée en haut le plus vite possible !</p>
+                <p>Vous avez 30 secondes pour marquer un maximum de points.</p>
+            </div>
+        </div>
+
+        <!-- Écran de jeu -->
+        <div id="gameScreen" class="screen">
+            <div class="game-header">
+                <div class="game-info">
+                    <div class="info-item">
+                        <span class="info-label">Score</span>
+                        <span class="info-value" id="score">0</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Temps</span>
+                        <span class="info-value" id="timer">30</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="target-display">
+                <p class="target-label">Appuyez sur :</p>
+                <div class="target-color" id="targetColor"></div>
+                <p class="target-name" id="targetName">ROUGE</p>
+            </div>
+
+            <div class="color-grid" id="colorGrid">
+                <!-- Les boutons de couleur seront générés par JS -->
+            </div>
+
+            <div class="combo-display" id="comboDisplay">
+                Combo x<span id="comboValue">1</span> 🔥
+            </div>
+        </div>
+
+        <!-- Écran de fin -->
+        <div id="endScreen" class="screen">
+            <div class="result-icon">🎉</div>
+            <h2>Terminé !</h2>
+            
+            <div class="final-score">
+                <p class="final-score-label">Votre score</p>
+                <p class="final-score-value" id="finalScore">0</p>
+            </div>
+
+            <div id="newRecordBadge" class="new-record hidden">
+                🏆 Nouveau record ! 🏆
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-item-value" id="correctAnswers">0</span>
+                    <span class="stat-item-label">Bonnes réponses</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-item-value" id="accuracy">0%</span>
+                    <span class="stat-item-label">Précision</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-item-value" id="maxCombo">0</span>
+                    <span class="stat-item-label">Meilleur combo</span>
+                </div>
+            </div>
+
+            <button class="btn btn-primary" id="playAgainBtn">
+                <span>Rejouer</span>
+                <span class="btn-icon">🔄</span>
+            </button>
+            <button class="btn btn-secondary" id="homeBtn">Accueil</button>
+        </div>
+    </div>
+
+    <div class="install-prompt hidden" id="installPrompt">
+        <p>📱 Installez l'app sur votre téléphone !</p>
+        <button id="installBtn" class="btn btn-small">Installer</button>
+        <button id="dismissBtn" class="btn btn-small btn-ghost">Plus tard</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
